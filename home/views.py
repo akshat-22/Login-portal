@@ -13,7 +13,7 @@ def loginUser(request):
     if request.method=="POST":
         username=request.POST.get('username')
         password=request.POST.get('password')
-        print(username,password)
+        print(username)
         #  check if user has entered correct credentials
         user=authenticate(username=username, password=password)
 
